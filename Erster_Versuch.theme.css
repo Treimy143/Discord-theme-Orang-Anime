@@ -3,29 +3,30 @@
 * @author Treimy
 * @version 1.0
 * @description A simple Theme to switch the Background
+* https://github.com/Treimy143/Anime-Theme-f-r-Discord
 */
 
 /* Weitere Hintergründe */
 :root{
-	--list-text: "Anime Theme from Treimy in Blue";
+	--list-text: "Anime Theme from Treimy in Orange";
 	--friends-icon: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLJZz87Z3aPC0NttvU8rXogucalaNpZdAQ1Q&usqp=CAU);
     --Background-1: url(https://wallpaperaccess.com/full/21591.jpg);
     --Background-2: url(https://vincisblog.com/wp-content/uploads/2018/01/Kimi.no_.Na_.wa_..full_.2178969.jpg);
     --Background-3: url(https://i.pinimg.com/originals/9c/b8/df/9cb8dfbe88e2c2b7b496b27681f3439d.jpg);
     --Background-4: url(https://i.pinimg.com/originals/4d/a0/50/4da050f2262073d0006f0e8106b9594e.jpg);
 	--Background-5: url(https://cdn.wallpapersafari.com/91/92/fnuZR5.jpg);
-	--Background-6: url(https://cdn.discordapp.com/attachments/119918741516451840/805852915829833748/Theme.jpg);
-	--Background-7: url('Link');
-	--Background-8: url('Link');
-	--Background-9: url('Link');
+	--Background-6: url(https://i.pinimg.com/originals/f5/ab/c4/f5abc48e75eeb7fcea832a21eec67d09.jpg);
+	--Background-7: url(https://wallpapercave.com/wp/wp2560392.jpg);
+	--Background-8: url(https://wallpapercave.com/wp/wp2579649.png);
+	--Background-9: url(https://steamuserimages-a.akamaihd.net/ugc/769477014852772485/108C032F847D6D1E48512934339532ACC592DF01/);
 }
 :root{
-    --background:var(--Background-1);
+    --background:var(--Background-9);
     --activetext-colour: white;
 
-    --primary1-colour: rgba(14, 14, 207, 0.877);
-    --primary2-colour: rgba(26, 76, 212, 0.699);
-    --primary3-colour: rgba(1, 45, 128, 0.6);
+    --primary1-colour: rgba(255, 72, 16, 0.877);
+    --primary2-colour: rgba(212, 26, 125, 0.699);
+    --primary3-colour: rgba(170, 179, 2, 0.612);
 
     --secondary1-colour: rgba(50,50,50,0.3);
     --secondary2-colour: rgba(100,100,100,0.5);
@@ -124,8 +125,7 @@
 		background-size: cover; 
 	}
 
-	/*
-	*/
+	/**/
 	#app-mount .container-1r6BKw {background: transparent;}
  
 	#app-mount .itemCard-v9viV7,
@@ -189,6 +189,9 @@
 		background-color: transparent; 
 		transition: background-color .15s ease-out;
 	}
+		/*Server List*/
+		
+
 		/*Server Boosting*/
 		#app-mount .perksModal-fSYqOq {background: var(--transparency-1);}
 
@@ -288,6 +291,10 @@
 				#app-mount .mediaBarGrabber-1FqnbN {
 					background-color: var(--primary1-colour);
 				}
+				/*Spotyfi*/
+				#app-mount .listeningAlong-30wH70{
+				    background:var(--secondary3-colour);
+				}
 
 		/*Messages*/
 		#app-mount .hasMore-3e72_v {background-color: var(--secondary1-colour); color: var(--primary1-colour);}
@@ -301,7 +308,7 @@
 		#app-mount .mentioned-xhSam7 {background-color: transparent;}
 		#app-mount .mentioned-xhSam7 .contents-2mQqc9, 
 		#app-mount .mentioned-xhSam7 .container-1ov-mD {
-			background-color: var(--primary3-colour);
+			background-color: var(--primary1-colour);
 		}
 		#app-mount .mentioned-xhSam7:before {
 			background: var(--primary1-colour); 
@@ -685,9 +692,6 @@
 	.homeIcon-tEMBK1{
 		display: none;
 	}
-	#app-mount .wrapper-1BJsBx .childWrapper-anI2G9 {
-		display:none;
-	}
 
 	.scroller-2FKFPG > .listItem-2P_4kh:first-child > .listItemWrapper-3X98Pc > .wrapper-25eVIn {
 		background: var(--friends-icon) !important;
@@ -696,15 +700,20 @@
 		background-size: var(--friends-icon-zoom) !important;
 		border-radius: 100%;
 		}
-		.theme-dark .button-OhfaWu, .theme-light .button-OhfaWu {
+		.theme-dark .button-OhfaWu, .theme-light .button-OhfaW {
 		background-color: #2f3136;
 		background-image: var(--friends-icon);
 		color: #fff;
 		}
+
 		.tutorialContainer-1v44GL .listItem-2P_4kh .listItemWrapper-3X98Pc .wrapper-25eVIn {
 		background: var(--friends-icon) !important;
 		background-position: var(--friends-icon-position) !important;
 		background-repeat: no-repeat !important;
 		background-size: var(--friends-icon-zoom) !important;
 		border-radius: 100%;
+		}
+
+		.theme-dark .button-OhfaW, .theme-light .button-OhfaW, .platform-win .scroller-1Bvpku {
+			background-color: var(--secondary3-colour)
 		}
